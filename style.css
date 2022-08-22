@@ -1,9 +1,12 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 html {
+    box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -12,7 +15,7 @@ body {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.4;
-    color: antiquewhite;
+    color: azure;
 }
 /* styling our nav bar */
 nav {
@@ -98,4 +101,40 @@ a {
     color: antiquewhite;
     transform: scale(1.03, 1.03);
 }
-
+/* projects section */
+#projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #45567D;
+}
+.projects-header {
+    color: azure;
+    font-size: 4.2rem;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.23rem solid #9AA3B7;
+}
+.my-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.my-projects a {
+    text-decoration: none;
+    color: azure;
+    border: 4px solid darkgray;
+}
+.projects-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+.projects-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: aquamarine;
+}
