@@ -29,6 +29,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding-right: 940px;
+    padding-left: 30px;
 }
 .nav-list {
     display: flex;
@@ -73,3 +74,28 @@ a {
     font-style: italic;
     color: #8E3044;
 }
+/* about me section */
+#about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #242427;
+}
+#about-me > h3 {
+    color: lightgreen;
+    font-size: 6rem;
+}
+#about-me > p {
+    line-height: 2.7rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: beige;
+}
+#about-me > p:hover {
+    color: antiquewhite;
+    transform: scale(1.03, 1.03);
+}
+
