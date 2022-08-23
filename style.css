@@ -17,6 +17,20 @@ body {
     line-height: 1.4;
     color: azure;
 }
+@media only screen and (max-width: 768px) {
+
+	body {
+		font-size: 1.6rem;
+	}
+
+}
+@media only screen and (max-width: 450px) {
+
+	body {
+		font-size: 1.4rem;
+	}
+
+}
 /* ---------------- */
 
 /* styling our nav bar */
